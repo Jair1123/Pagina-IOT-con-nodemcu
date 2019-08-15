@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+.custom-navbar{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
 
 .navbar{
     box-shadow: 2px 2px 5px #000;
@@ -10,26 +13,85 @@ html{
     color: #fff;
 }
 
+
 .main-header{
-    position: relative;
-    background: url(./Imagenes/background.jpg);
-    background-size: cover;
-    min-height: 595px;
+    margin: 0;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
+
+.custom-titulo{
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+:root{
+    --primary-gradient:linear-gradient(to bottom,#ffffff,#adadaa);
+    --label-gradient:linear-gradient(to bottom, #536452 0%, #57dd52 40%, #95e669 100%);
+     
+}
+
 .background-overlay{
-    position: absolute;
-    background: rgba(48, 51, 107,.7);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-color: #282c34;
+    background: url('./Imagenes/Night_3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 92vw;
+    height: 89vh;
+    font-size: calc(10px+2vmin);
+    color: #fff;
+    margin: auto;
+    /* margin-top: 4rem; */
+    text-align: center;
 }
+
+/* styling checkbox */
+
+.lightswitch{
+    border: 1px solid white;
+    width: 40px;
+    height: 7px;
+    background: rgb(192, 188, 188);
+    margin: 20px auto;
+    border-radius: 100px;
+    position: relative;
+}
+.lightswitch label{
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: #0f0c29;
+    background:var(--label-gradient);
+    border-radius: 50px;
+    position: absolute;
+    top: -6px;
+    left: -1px;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,alpha);
+    transition: all .5s ease;
+}
+
+.lightswitch input[type="checkbox"]{
+    position: absolute;
+    left: -8px;
+    top: -6px;
+    width: 50px;
+    opacity:0;
+
+}
+
+.lightswitch input[type="checkbox"]:checked + label{
+    left: 25px;
+    background: tomato;
+}
+
+
+
+/* Aqui empieza el title  */
 .custom-title{
     width: 100%;
 }
-.custom-text{
-    /* margin-top: 140px; */
-}
+/* .custom-text{
+    margin-top: 140px;
+} */
  .custom-heigth{
     /* height: ; */
     width: 200px;
@@ -40,15 +102,10 @@ html{
     height: 400px;
 }
 .custom-imgH{
-    height: 100px;
-    width: 150px;
+    height: 150px;
+    width: 250px;
 }
-.custom-image{
-    transform: rotate(90deg);
-    
-    /* margin-top: 150px; */
-    /* margin-right: 0px; */
-}
+
 .custom-design{
     border-radius: 0;
 

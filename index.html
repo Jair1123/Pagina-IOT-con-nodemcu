@@ -19,7 +19,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./Imagenes/arc_reactor_2x.png" alt="Logo de la empresa" style="width: 10%">
@@ -51,20 +51,23 @@
 
     <!-- Header -->
     <header class="main-header">
-        <div class="background-overlay text-white d-flex align-items-center py-1">
+        <div class="background-overlay text-white d-block  py-1">
+            <div class="custom-titulo d-flex align-items-center justify-content-center ">
+                <h1>Todo puede estar conectado</h1>
+            </div>
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-12 col-lg-6 text-center justify-content-center custom-text ">
-                        <h1>Todo puede estar conectado la revolucion tecnologica en la vida cotidiana</h1>
-                        <p>Que es Todo puede estar conectado? Es la primer plataforma web en la que se pueden agregar
-                            tus dispositivos IOT, tambien tenemos la opcion de conectar todos tus aparatos electronicos
-                            a la red internet para que los controles desde tu computadora </p>
-                    </div>
-                    <div class="col-md-none col-lg-6 d-flex justify-content-center">
-                        <img src="./Imagenes/esp.PNG" alt="Producto"
-                            class="img-fluid d-md-none d-lg-block  custom-image ">
-                    </div>
+                <div class="lightswitch">
+                    <input type="checkbox" name="switch" id="switch">
+                    <label for="checkbox"></label>
                 </div>
+                <div class="imglayer">
+                    <img src="./Imagenes/Night_4.png" alt="imagen de las tiendas" id="shops">
+                </div>
+                <!-- <h4>
+                    <span class="hours">20</span>
+                    <span class="minutes">35</span>
+                    <span class="seconds">02</span>
+                </h4> -->
             </div>
         </div>
     </header>
@@ -415,7 +418,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src="./main3.js"></script>
 
 </body>
 
